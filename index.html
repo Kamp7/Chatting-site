@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><img src="whatsapp.png" /></div>
+    </nav>
+    <div class="container">
+      <div class="messagebox">
+      <!-- message will be added here -->
+      </div>
+      <div class="typingbox">
+        <form action="#" id="send-container">
+          <input
+            type="text"
+            placeholder="Enter Your message"
+            name="messageInp"
+            id="messageInp"
+          />
+        </form>
+        <button class="btn" type="submit">
+          <img src="send-message.png" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

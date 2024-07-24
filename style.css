@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    margin: auto;
+    height: 8%;
+    background:linear-gradient(35deg,red,orange,purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav>.logo{
+    width: 40px;
+    height:40px;
+}
+nav>.logo>img
+{
+    width: 100%;
+    height: 100%;
+
+
+}
+.container{
+    background: linear-gradient(lightblue,grey);
+    width: 100%;
+    height: 92%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background-color: transparent;
+    border: 1px solid black;
+    
+}
+.container>.messagebox
+{
+    width: 100%;
+    height: 82%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+.container>.messagebox::-webkit-scrollbar
+{
+    width: 8px;
+    background-color:transparent;
+}
+.container>.messagebox::-webkit-scrollbar-thumb
+{
+    background:linear-gradient(35deg,red,orange,purple);
+    
+}
+.container>.messagebox>.message
+{ 
+
+  max-width:45%;
+  background-color: rgba(4, 137, 135, 0.648);
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 0.4px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  width:max-content; 
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 8px;
+  font-size: 20px;
+  border-radius: 20px;
+  font-family: "Titillium Web", sans-serif;
+}
+.left
+{
+    float: left;
+    clear: both;
+}
+.right
+{
+    float: right;
+    clear: both;
+}
+.typingbox
+{
+    width: 90%;
+    margin: auto;
+    height: 10%;
+    display: flex;
+    position: fixed;
+    bottom: 40px;
+    left: 10px;
+    
+}
+.typingbox>form
+{
+    width: 88%;
+    height: 100%;
+}
+.typingbox>form>input{
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    font-size: 1.2rem;
+    color: black;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+}
+.typingbox>button{
+    background:linear-gradient(35deg,rgba(255, 0, 0, 0.4),rgba(255, 166, 0, 0.4),rgba(128, 0, 128, 0.4));
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 3%;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+.typingbox>button:hover{
+    background:linear-gradient(35deg,red,orange,purple);
+}
+.typingbox>button>img{
+    width: 35px;
+    height: 35px;
+
+}
